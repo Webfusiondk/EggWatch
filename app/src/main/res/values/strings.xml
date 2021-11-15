@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TheRealEggWatch</string>
+    <string name="egg_text">Vælg æg</string>
+    <string name="smiling_egg">Smilende æg</string>
+    <string name="hardboiled_egg">Hårdkogt æg</string>
+    <string name="softboiled_egg">Blødkogt æg</string>
+</resources>

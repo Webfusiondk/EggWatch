@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/egg_text"
+            android:layout_width="410dp"
+            android:layout_height="54dp"
+            android:text="@string/egg_text"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="412dp"
+            android:layout_height="121dp">
+
+            <ImageButton
+                android:id="@+id/softboiled_egg_button"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:contentDescription="@string/softboiled_egg"
+                android:scaleType="center"
+                android:src="@drawable/softboiledegg"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/smiling_egg_button"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:contentDescription="@string/smiling_egg"
+                android:scaleType="center"
+                android:src="@drawable/smilendeegg"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/hardboiled_egg_button"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:contentDescription="@string/hardboiled_egg"
+                android:scaleType="center"
+                android:src="@drawable/hardboiledegg"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </TableRow>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="82dp" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:id="@+id/viewSpace"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/responseView"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/egg_timer_min"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:text="yeeey"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/egg_timer_sec"
+                android:layout_width="74dp"
+                android:layout_height="98dp"
+                android:text="yeeeet"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/start_timer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
